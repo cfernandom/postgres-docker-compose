@@ -21,7 +21,7 @@ services:
       - "8080:80"
     volumes:
       - pgadmin-data:/var/lib/pgadmin
-    enviroment:
+    environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     env_file:
